@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: fit-content;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 10vh;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.search-bar {
+    float: right;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: rgb(223, 53, 53);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav {
+    background-color: black;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(223, 53, 53);
+}
+
+
+main {
+    margin-top: 20px;
+    width: 100%;
+}
+
+button{
+    padding: 15px 25px;
+    margin: 20px;
+    font-size: 12px bold;
+    letter-spacing: 1px;
+    border: 2px solid rgb(223, 53, 53);
+    color: black;
+    cursor: pointer;
+    background: linear-gradient(to right, transparent 50%, rgb(223, 53, 53) 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s;
+}
+
+button:hover{
+    background-position: right;
+    color: #000;
+    font-weight: bold;
+}
+
+#cardimg2{
+    margin-left: 150px;
+    width: 280px;
+    border: 5px solid white;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    bottom: 5px;
+}
+
+.cardtext2{
+    margin-left: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.cardhead2{
+    margin-left: 40px;
+    color: rgb(223, 53, 53);
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+}
+
+.card{
+    background-color: white;
+}
+
+/* animation for images */
+#cardimg1.show {
+    opacity: 1; /* Set opacity to 1 when image is visible */
+    transform: translateX(0); /* Slide images into viewport */
+}
+
+/* styles for image1 */
+
+#cardimg1{
+    margin-left: 50px;
+    width: 380px;
+   
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    bottom: 5px;
+}
+
+.cardtext1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+.cardhead1{
+    color: rgb(223, 53, 53);
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: right;
+}
+
+/* styles for image2 */
+
+#cardimg2{
+    margin-left: 50px;
+    width: 380px;
+   
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    bottom: 5px;
+}
+
+.cardtext2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+.cardhead2{
+    color: rgb(223, 53, 53);
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: right;
+}
+
+/* styles for image3 */
+
+#cardimg3{
+    margin-left: 50px;
+    width: 380px;
+   
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    bottom: 5px;
+}
+
+.cardtext3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+.cardhead3{
+    color: rgb(223, 53, 53);
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: right;
+}
+
+
+
+/*footer styles*/
+
+.footer{
+    top: 600px;
+
+    display: flex;
+    background: rgb(223, 53, 53);
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    font-family: "Open Sans";
+
+    color: white;
+}
+
+.footercontent .container h2{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footercontent .container h2:hover{
+    color: rgb(223, 53, 53);
+}
+
+.footercontent{
+    display: flex;
+    background: black;
+    align-items: center;
+    margin-top: 600px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footercontent h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: white;
+    line-height: 3rem;
+}
+
+.footercontent p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    color: white;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    position: relative;
+    right: 15px;
+    color: white;
+}
+
+.socials a li{
+    font-size: 80px;
+    transition: color .4s ease;
+}
+.socials i{
+    font-size: 25px;
+}
+
+.socials a:hover i{
+    color: rgb(223, 53, 53);
+}
+
+/*  media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .search-bar {
+        float: none;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .search-bar input[type="text"] {
+        width: 60%;
+        margin-right: 0;
+    }
+
+    .search-bar button {
+        width: 30%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+}
+
+/*  media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+
+    .search-bar button {
+        width: 100%;
+    }
+}
+
